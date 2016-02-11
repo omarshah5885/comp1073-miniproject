@@ -2,7 +2,12 @@ img {
 	width: 100%;
 }
 
-.nav {
-	text-align: center;
+body, header, main, html {
+	background: linear-gradient(#0F0F0F, #191919);
+	color: #E8E8E8;
 }
 
+html, body, header, main {
+	background-image: url("images/moon-shine.jpg");
+	background-size: cover;
+}
