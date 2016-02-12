@@ -10,7 +10,13 @@
 	aboutMe.innerHTML = "Hello, my name is Omar Shah and I am an ambitious developer that wants to be a professional in the field of marketing with emphasis on digital tools and business intelligence. I am currently enrolled at Georgian College's Interactive Web Design and Development program and am seeking a CO-OP for summer 2016 with a firm that has a strong leadership and work culture.";
 	
 	var getintouch = document.getElementById("getintouch");
-	getintouch.innerHTML = "Get in Touch";
+	getintouch.innerHTML = "Get In Touch";
+	
+	var button = document.getElementById("getintouch");
+	button.onclick = function () {
+		location.href = "contact.html";
+	};
+	
 	
 	var project1 = document.getElementById("project1");
 	project1.innerHTML = "This is a website I created for a product before the popularization of the internet. I chose to do it on the Nintendo NES game console. I used no framework for this project and all the layout was performed manually";
@@ -26,4 +32,11 @@
 	
 	var connectBlurb = document.getElementById("connectBlurb");
 	connectBlurb.innerHTML = "If you're interested with how I can help your organization have a better digital footprint, please feel free to contact me.";
+	
+	var submit = document.getElementById("submit");
+	submit.onclick = function () {
+		location.href = "index.html";
+	};
+	
+
 })();

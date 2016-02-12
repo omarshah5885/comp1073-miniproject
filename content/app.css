@@ -14,7 +14,12 @@ html, body, header, main {
 
 button {
 	margin: 5%;
-	
+	font-family: 'Brush Script MT', cursive;
+	font-size: 160%;
+}
+
+.btn {
+	font-size: 160%;
 }
 
 .bio {
