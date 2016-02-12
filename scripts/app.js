@@ -1,11 +1,13 @@
-//iffy 
+// DOM manipulation created by Omar Shah for site, omarshah.azurewebsites.net which is a site about me and my works.
+
+"use strict";
+
+//iify 
 (function () {
-	/*document.body.style.backgroundImage = "url('../content/images/moon-shine.jpg')";
-	document.body.style.backgroundColor = "#efefef";*/
-
-
+//conditional statement to display my string variables for their respective nodes on each webpage
 	if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == 'index.html') {
 
+//string variables are as follows
 		var aboutMeTitle = document.getElementById("aboutMeTitle");
 		aboutMeTitle.innerHTML = "About Me";
 
@@ -15,6 +17,7 @@
 		var getintouch = document.getElementById("getintouch");
 		getintouch.innerHTML = "Get In Touch";
 
+//onlick event created to link to my contact page once getintouch button is pressed
 		var button = document.getElementById("getintouch");
 		button.onclick = function () {
 			location.href = "contact.html";
@@ -22,14 +25,15 @@
 
 	} if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == 'projects.html') {
 
+//string variables for my figcaption under each project
 		var project1 = document.getElementById("project1");
 		project1.innerHTML = "This is a website I created for a product before the popularization of the internet. I chose to do it on the Nintendo NES game console. I used no framework for this project and all the layout was performed manually";
 
 		var project2 = document.getElementById("project2");
-		project2.innerHTML = "I created an interactive JavaScript through a complex set of decision structures. The game is based on randomization and each choice has a different set of outcomes.";
+		project2.innerHTML = "I created an interactive JavaScript game through a complex set of decision structures. The game is based on randomization and each choice has a different set of outcomes.";
 
 		var project3 = document.getElementById("project3");
-		project3.innerHTML = "This is my first PHP coded assignment which links back to few databases I created using SQL. It is a list of NBA players with their stats and any user can add whoever they like and get an email sent back to them confirming the record. Every input is validated.";
+		project3.innerHTML = "A PHP coded assignment which links back to few databases I created using SQL. It is a list of NBA players with their stats and any user can add whoever he likes and get an email sent back to him confirming the record. Every input is validated to prevent datatype errors.";
 	}
 	else if (location.pathname.substring(location.pathname.lastIndexOf("/") + 1) == 'contact.html') {
 		var connect = document.getElementById("connect");
@@ -37,7 +41,7 @@
 
 		var connectBlurb = document.getElementById("connectBlurb");
 		connectBlurb.innerHTML = "If you're interested with how I can help your organization have a better digital footprint, please feel free to contact me.";
-
+//second onclick function created which links back to home page once submit button is pressed 
 		var submit = document.getElementById("submit");
 		submit.onclick = function () {
 			location.href = "index.html";
