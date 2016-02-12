@@ -3,11 +3,10 @@ img {
 }
 
 body, header, main, html {
-	background: linear-gradient(#0F0F0F, #191919);
 	color: #E8E8E8;
 }
 
-html, body, header, main {
+body {
 	background-image: url("images/moon-shine.jpg");
 	background-size: cover;
 }
@@ -20,10 +19,21 @@ button {
 
 .btn {
 	font-size: 160%;
+	margin-bottom: 5%;
 }
 
 .bio {
 	margin-top: 15%;
-	font-size: 120%;
-	
+	font-size: 140%;	
+}
+
+footer {
+	background: #191919;
+	text-align: center;
+	font-variant: small-caps;
+}
+
+figcaption {
+	background: #191919;
+	opacity: .7;
 }
