@@ -15,11 +15,11 @@
 		aboutMe.innerHTML = "Hello, my name is Omar Shah and I am an ambitious developer that wants to be a professional in the field of marketing with emphasis on digital tools and business intelligence. I am currently enrolled at Georgian College's Interactive Web Design and Development program and am seeking a CO-OP for summer 2016 with a firm that has a strong leadership and work culture.";
 
 		var getintouch = document.getElementById("getintouch");
-		getintouch.innerHTML = "Get In Touch";
+		getintouch.innerHTML = "Get In Touch!";
 
 //onlick event created to link to my contact page once getintouch button is pressed
 		var button = document.getElementById("getintouch");
-		button.onclick = function () {
+		button.addEventListener = function () {
 			location.href = "contact.html";
 		};
 
@@ -41,11 +41,22 @@
 
 		var connectBlurb = document.getElementById("connectBlurb");
 		connectBlurb.innerHTML = "If you're interested with how I can help your organization have a better digital footprint, please feel free to contact me.";
-//second onclick function created which links back to home page once submit button is pressed 
+//second onclick function created to link back to home page once submit button is pressed 
 		var submit = document.getElementById("submit");
 		submit.onclick = function () {
+		//input variables created in order to be displayed on console;
+			var save_contact = document.getElementById("name").value;
+			var save_contact2 = document.getElementById("email").value;
+			var save_contact3 = document.getElementById("phone").value;
+			var save_contact4 = document.getElementById("comment").value;
+			console.log(save_contact);
+			console.log(save_contact2);
+			console.log(save_contact3);
+			console.log(save_contact4);
 			location.href = "index.html";
 		};
+		
+		
 	}
 
 
