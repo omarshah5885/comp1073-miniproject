@@ -43,7 +43,7 @@
 		connectBlurb.innerHTML = "If you're interested with how I can help your organization have a better digital footprint, please feel free to contact me.";
 //second onclick function created to link back to home page once submit button is pressed 
 		var submit = document.getElementById("submit");
-		submit.onclick = function () {
+		submit.onclick = function (e) {
 		//input variables created in order to be displayed on console;
 			var save_contact = document.getElementById("name").value;
 			var save_contact2 = document.getElementById("email").value;
@@ -53,7 +53,9 @@
 			console.log(save_contact2);
 			console.log(save_contact3);
 			console.log(save_contact4);
-			location.href = "index.html";
+			//test function to prevent page from refreshing
+			e.preventDefault();
+			// location.href = "index.html";
 		};
 		
 		
