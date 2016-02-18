@@ -43,20 +43,21 @@
 		connectBlurb.innerHTML = "If you're interested with how I can help your organization have a better digital footprint, please feel free to contact me.";
 //second onclick function created to link back to home page once submit button is pressed 
 		var submit = document.getElementById("submit");
-		submit.onclick = function (e) {
+		submit.addEventListener( "click", function (event) {
 		//input variables created in order to be displayed on console;
-			var save_contact = document.getElementById("name").value;
-			var save_contact2 = document.getElementById("email").value;
-			var save_contact3 = document.getElementById("phone").value;
-			var save_contact4 = document.getElementById("comment").value;
-			console.log(save_contact);
-			console.log(save_contact2);
-			console.log(save_contact3);
-			console.log(save_contact4);
-			//test function to prevent page from refreshing
-			e.preventDefault();
+			var save_contact = document.getElementById("name");
+			var save_contact2 = document.getElementById("email");
+			var save_contact3 = document.getElementById("phone");
+			var save_contact4 = document.getElementById("comment");
+
+			console.log("Name: " + save_contact.value);
+			console.log("Email: " + save_contact2.value);
+			console.log("Phone: " + save_contact3.value);
+			console.log("Comment: " + save_contact4.value);
+			//test function to prevent submit button functionality 
+			event.preventDefault();
 			// location.href = "index.html";
-		};
+		} );
 		
 		
 	}
