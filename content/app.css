@@ -8,6 +8,18 @@ body, header, main, html {
 	color: #E8E8E8;
 }
 
+.navbar {
+	text-shadow: 2px 2px 20px darkgray;
+	font-family: Garamond;
+	font-size: 130%;
+	
+}
+h1, h2 {
+	text-shadow: 2px 2px 20px darkgray;
+	font-family: Garamond;
+	
+}
+
 header {
 	background-image: url("images/moon-shine.jpg");
 	height: 40vh;
@@ -21,6 +33,13 @@ header {
 body, main {
 	background-image: url("images/elegant-design.jpg");
 	background-size: cover;
+}
+
+main {
+
+	border-left: 1vh double #C9C8C2;
+
+
 }
 
 button {
@@ -45,9 +64,15 @@ footer {
 	font-variant: small-caps;
 }
 
+p {
+	background: #191919;
+	opacity: .7;
+}
+
 figcaption {
 	background: #191919;
 	opacity: .7;
+	margin: 2% 0;
 }
 
 /*centering bootstrap menu button*/
@@ -59,5 +84,6 @@ figcaption {
 .navbar .navbar-collapse {
     text-align: center;
 }
+
 
 
