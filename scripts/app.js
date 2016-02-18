@@ -19,7 +19,7 @@
 
 //onlick event created to link to my contact page once getintouch button is pressed
 		var button = document.getElementById("getintouch");
-		button.addEventListener = function () {
+		button.onclick = function () {
 			location.href = "contact.html";
 		};
 
