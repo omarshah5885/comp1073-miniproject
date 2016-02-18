@@ -49,3 +49,15 @@ figcaption {
 	background: #191919;
 	opacity: .7;
 }
+
+/*centering bootstrap menu button*/
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+
