@@ -4,18 +4,15 @@ img {
 	width: 100%;
 }
 
+/*setting font color to something readable*/
 body, header, main, html {
 	color: #E8E8E8;
 }
 
-.navbar {
-	text-shadow: 2px 2px 20px darkgray;
-	font-family: Garamond;
-	font-size: 130%;
-	
-}
+
+/*setting typography to my brand*/
 h1, h2 {
-	text-shadow: 2px 2px 20px darkgray;
+	text-shadow: 2px 2px 20px #4d4a47;
 	font-family: Garamond;
 } 
 
@@ -25,7 +22,13 @@ p {
 	/*opacity: .7;*/
 }
 
-/*change default bootstrap navbar color to my theme*/
+/*change default bootstrap navbar color to my brand theme*/
+.navbar {
+	text-shadow: 2px 2px 20px #4d4a47;
+	font-family: Garamond;
+	font-size: 130%;
+}
+
 .navbar {
 	background-image: none;
 }
@@ -42,6 +45,7 @@ p {
  }
 
 
+/*added background images to suit my theme*/
 header {
 	background-image: url("images/moon-shine.jpg");
 	height: 40vh;
@@ -57,8 +61,8 @@ body {
 	background-size: cover;
 }
 
+/*added alpha transparency to suit my brand color*/
 main {
-
 	border-left: 1vh double #C9C8C2;
 	border-right: 1vh double #C9C8C2;
 	background-color: rgba(24, 24, 112, .25);
@@ -69,12 +73,13 @@ button {
 	font-family: 'Brush Script MT', cursive;
 	font-size: 160%;
 }
-
 .btn {
 	font-size: 160%;
 	margin-bottom: 5%;
 }
 
+
+/*removing the outline from collapse icon on resume page*/
 .btn-info {
 	background: none;
 	border:none;
@@ -86,6 +91,7 @@ button {
 	border:none;
     box-shadow:none;	
 }
+
 
 .bio {
 	margin-top: 15%;
@@ -105,7 +111,7 @@ figcaption {
 	margin: 2% 0;
 }
 
-/*centering bootstrap menu button*/
+/*centering bootstrap menu button on smaller screen*/
 .navbar .navbar-nav {
     display: inline-block;
     float: none;
@@ -121,3 +127,7 @@ figcaption {
 	margin-bottom: 2%;
 }
 
+/*aliging form page header*/
+#connect, #connectBlurb {
+	text-align: center;
+}
